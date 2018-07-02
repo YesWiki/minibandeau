@@ -1,0 +1,96 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{configuration param="lang"}}"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="{{configuration param="lang"}}"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="{{configuration param="lang"}}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{configuration param="lang"}}"> <!--<![endif]-->
+<head>
+  <!-- HTML Metas -->
+  <meta charset="{{configuration param="charset"}}">
+  {{metarobots}}
+  <meta name="keywords" content="{{configuration param="meta_keywords"}}" />
+  <meta name="description" content="{{configuration param="meta_description"}}" />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Title of the page -->
+  <title>{{configuration param="wakka_name"}} : {{currentpage}}</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-57x57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-60x60.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-76x76.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-114x114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="https://enercoop.fr/sites/all/themes/nrc/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="https://enercoop.fr/sites/all/themes/nrc/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://enercoop.fr/sites/all/themes/nrc/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="https://enercoop.fr/sites/all/themes/nrc/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://enercoop.fr/sites/all/themes/nrc/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://enercoop.fr/sites/all/themes/nrc/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://enercoop.fr/sites/all/themes/nrc/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="https://enercoop.fr/sites/all/themes/nrc/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700" rel="stylesheet" type="text/css">
+  {{linkstyle}}
+  {{linkrss}}
+</head>
+
+<body {{parambody}}>
+  <div id="yw-container" class="yw-fullscreen">
+
+    <nav id="yw-topnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div id="yw-toplinks">
+        <div class="container">
+          {{include page="PageTop" class="yw-topnav text-right toplinkpage" doubleclic="1" actif="1"}}
+        </div> <!-- /.container -->
+      </div><!-- /#yw-toplinks -->
+      <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{configuration param="base_url"}}{{configuration param="root_page"}}">{{include page="PageTitre" doubleclic="1"}}</a>
+          </div> <!-- /.navbar-header -->
+          <div class="navbar-collapse collapse">
+            {{include page="PageMenuHaut" class="yw-topnav topnavpage" doubleclic="1" actif="1"}}
+            {{include page="PageRapideHaut" class="yw-topnav-fast-access pull-right" doubleclic="1" actif="1"}}
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+    </nav><!-- /#yw-topnav -->
+
+    <header id="yw-header">
+      {{include page="PageHeader" class="yw-headerpage" doubleclic="1"}}
+    </header><!-- /#yw-header -->
+
+
+    <div id="yw-main" role="main" {{doubleclic}}>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            {{include page="PageMenu" class="menupage vertical-dropdown-menu" doubleclic="1" actif="1"}}
+          </div>
+          <div class="col-md-9" {{doubleclic}}>
+            {WIKINI_PAGE}
+          </div>
+        </div><!-- /.row -->
+        {{barreredaction}}
+      </div> <!-- /.container -->
+    </div><!-- /#yw-main -->
+
+    <footer id="yw-footer">
+      <div class="container">
+        {{include page="PageFooter" class="footerpage" doubleclic="1"}}
+      </div> <!-- /.container -->
+    </footer><!-- /#yw-footer -->
+  </div> <!-- /#yw-container -->
+
+  {{linkjavascript}}
+</body>
+</html>

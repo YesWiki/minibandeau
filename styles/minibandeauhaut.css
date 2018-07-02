@@ -1,0 +1,377 @@
+/* Regular */
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/leaguegothic-italic-webfont.eot');
+  src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-italic-webfont.woff') format('woff'), url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'), url('../fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/* Italic */
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Condensed */
+
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('../fonts/leaguegothic-condensed-regular-webfont.eot');
+  src: url('../fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Condensed Italic */
+
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('../fonts/leaguegothic-condensed-italic-webfont.eot');
+  src: url('../fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'), url('../fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'), url('../fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.68;
+  color: #333333;
+  background-color: #fff;
+  padding-top: 113px;
+}
+
+h1 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 42px;
+}
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: inherit;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 26px;
+  margin-bottom: 13px;
+}
+
+h2, .h2 {
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+a {
+  transition: all .2s;
+  border-bottom: 1px solid transparent;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  border-bottom: 1px solid initial;
+  color: inherit;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+#yw-topnav {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  transition: all .3s;
+  box-shadow: 0px -1px 8px 0px rgba(50, 50, 50, 0.3);
+  z-index: 5;
+}
+
+#yw-topnav .container {
+  position: relative;
+  text-align: right;
+  padding: 15px 0;
+}
+
+#yw-topnav .navbar-nav>li>a {
+  color: #243542;
+}
+
+#yw-topnav .navbar-nav .active-link {
+  color: #F4A41D;
+  opacity: 1;
+  background: transparent;
+}
+
+.header-logo {
+  width: 140px;
+  height: 48px;
+  fill: #E00F21;
+  margin-top: -15px;
+  margin-right: 15px;
+}
+
+#yw-main {
+  padding-top: 30px;
+}
+
+#yw-footer {
+  padding: 45px 0;
+  background-color: #f7f7f7;
+  font-size: .8em;
+}
+
+.footer {
+  font-size: .8em;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.form-search {
+  display: inline;
+}
+
+.search-query {
+  width: 100px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.roboto {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+}
+
+.background-image.parallax {
+  transform: translateZ(-3px) scale(1.1);
+}
+
+.affix+#yw-main {
+  margin-top: 103px;
+}
+
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a {
+  color: rgb(41, 118, 186);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(0, 113, 140);
+}
+
+.grisclair {
+  background: #f7f7f7;
+}
+
+.bleufonce {
+  background: rgb(0, 113, 140);
+  color: #fff;
+}
+
+.vert {
+  background: rgb(0, 174, 149);
+  color: #fff;
+}
+
+.bleu {
+  background: rgb(41, 118, 186);
+  color: #fff;
+}
+
+.vert2 {
+  background: rgb(74, 166, 77);
+  color: #fff;
+}
+
+.orange {
+  background: #f4ae38;
+}
+
+.arrondi {
+  border-radius: 5px;
+  padding: 15px;
+}
+
+
+/* fiche */
+
+.row-fiche {
+  margin-bottom: 30px;
+}
+
+.picto {
+  min-height: 70px;
+  text-align: center;
+}
+
+.col-title {
+  margin: 0;
+  padding: 0;
+}
+
+.titre_fiche {
+  min-height: 70px;
+  padding: 1px;
+}
+
+.titre_fiche h1 {
+  margin: 10px auto;
+  text-align: center;
+  padding: 26px 0 25px;
+}
+
+.fiche-contexte, .fiche-contenu, .fiche-contenu2, .fiche-contenu3, .fiche-aller-plus-loin {
+  margin-bottom: 50px;
+}
+
+.image-left {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.image-right {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.negative-margin-top, .fiche-eco {
+  margin-top: -30px;
+}
+
+.panel-body .fiche-eco {
+  margin-top: 0;
+}
+
+.panel-body .container {
+  width: 100%;
+}
+
+.minical table {
+  font-size: 13px !important;
+}
+
+.minical .fc-header-title h2 {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.minical .fc-event-title {
+  font-size: 11px !important;
+  line-height: 11px !important;
+}
+
+.white h1 {
+  margin-bottom: 0;
+}
+
+.page .white h1 {
+  margin-top: 35px;
+}
+
+.white h3 {
+  margin-top: 0;
+}
+
+.logo-img img, .fiche-eco .picto img {
+  width: 120px;
+  height: auto;
+}
+
+#yw-toplinks {
+  background-color: #f7f7f7;
+  padding: 6px 0;
+  font-size: 12px;
+  color: #999999;
+}
+
+#yw-toplinks .container {
+  padding: 0;
+}
+
+#yw-toplinks a {
+  transition: all .2s;
+  color: #999999;
+}
+
+.pictos figcaption {
+  padding: 40px 10px;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(244, 174, 56, .95);
+  font-weight: bold;
+}
+
+.modal-body .container {
+  width: 100%;
+}
+
+.yw-footernav-fast-access {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .yw-headerpage h1, .background-image h1 {
+    font-size: 18px;
+  }
+  .yw-headerpage h4, .background-image h4 {
+    font-size: 10px;
+  }
+  .background-image .container {
+    width: 100%;
+  }
+  #yw-topnav .container {
+    padding: 15px;
+  }
+  #yw-toplinks .container {
+    padding: 3px;
+  }
+  #yw-toplinks .toplinkpage {
+    font-size: 10px;
+    text-align: center;
+  }
+  .logo-img img, .background-image .attached_file img, .fiche-eco .picto img {
+    width: 100px;
+  }
+  #tocjs-PagePrincipale {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #yw-topnav .navbar-nav>li>a {
+    font-size: 14px;
+  }
+  .yw-topnav-fast-access {
+    display: none;
+  }
+  .yw-footernav-fast-access {
+    display: block;
+  }
+}
+
+.yeswiki-page-widget {
+  padding: 0;
+}
